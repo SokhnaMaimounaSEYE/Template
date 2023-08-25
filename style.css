@@ -79,10 +79,23 @@ p{
 }
 h5{
     color: white;
+    /* T4 */
+    font-family: Rammetto One;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
 }
 .list{
-    list-style-type: disc;
     color: white;
+    /*text-align: center;*/
+
+    /* Normale 2 */
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .email{
     color: var(--c-1, #FFF);
@@ -125,6 +138,29 @@ line-height: 18px; /* 128.571% */
     width: 31.36px;
     height: 31.269px;
 }
-
+#submit{
+    border-radius: 5px;
+    border: 1px solid var(--c-2, #51ACE0);
+    background: var(--c-2, #51ACE0);
+    display: flex;
+    padding: 15px 20px;
+    align-items: flex-start;
+}
+#footer{
+    border-bottom: 1px solid var(--c-1, #FFF);
+    align-items: center;  
+}
+#copyright{
+    color: var(--c-1, #FFF);
+    text-align: center;
+    align-self: stretch;
+    /* Normal blanc */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
 
 
