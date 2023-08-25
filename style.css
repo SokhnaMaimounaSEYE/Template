@@ -75,9 +75,56 @@ p{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px; /* 157.143% */
-    
-    
+    line-height: 22px; /* 157.143% */  
 }
+h5{
+    color: white;
+}
+.list{
+    list-style-type: disc;
+    color: white;
+}
+.email{
+    color: var(--c-1, #FFF);
+
+    /* Normal */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    display: flex;
+    padding: 15px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid var(--c-1, #FFF);
+    background-color: var(--c-3, #434343);
+}
+#condition{
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 14px;
+    border-radius: 2px;
+    border: 1px solid #D6D6D6;
+    background: #FAFAFA;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+}
+
+#condition p{
+    color: var(--c-3, #434343);
+
+/* Normal */
+font-family: Ubuntu;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
+}
+.robot{
+    width: 31.36px;
+    height: 31.269px;
+}
+
 
 
