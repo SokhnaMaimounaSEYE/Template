@@ -47,6 +47,54 @@
     gap: 10px;
     align-self: stretch;
 }
+#apropos h5{
+    color: #434343;
+    /*leading-trim: both;
+    text-edge: cap;*/
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 145.455% */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+#apropos h3{
+
+    /* T1 */
+    font-family: Rammetto One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#apropos p{
+    color: var(--black, #231F20);
+    text-align: justify;
+
+    /* Normal */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+}
+#button{
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1.5px solid var(--c-3, #434343);
+    background-color: white;
+}
 footer{
     background: var(--c-3, #434343);
     flex-wrap: nowrap;
