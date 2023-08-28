@@ -78,6 +78,7 @@ p{
     line-height: 22px; /* 157.143% */  
 }
 h5{
+    align-self: stretch;
     color: white;
     /* T4 */
     font-family: Rammetto One;
