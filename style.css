@@ -101,6 +101,9 @@
     border: 1.5px solid var(--c-3, #434343);
     background-color: white;
 }
+#description-block{
+    background-color: white;
+}
 #description{
     margin: 60px 100px 150px 150px;
 }
@@ -113,6 +116,14 @@
     flex-shrink: 0;
     align-self: stretch;
     text-align: justify;
+}
+#textapropos h6{
+    color: white;
+}
+#textapropos hr{
+    width: 150px;
+    height: 1.5px;
+    background-color: white;
 }
 #textapropos h3{
     color: white;
@@ -234,6 +245,53 @@
     font-weight: 400;
     line-height: 22px; /* 157.143% */
 }
+#immobilier{
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+#experiments h3{
+    height: 122px;
+    align-self: stretch;
+    /* T1 */
+    font-family: Rammetto One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#experiments p{
+    align-self: stretch;
+    color: var(--c-3, #434343);
+    /* Normal */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+}
+#chiffres h5{
+    color: var(--c-8, #FFAC0A);
+
+    /* T1 */
+    font-family: Rammetto One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#chiffres p{
+    color: var(--c-3, #434343);
+
+    /* Normal */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+}
 footer{
     background: var(--c-3, #434343);
     flex-wrap: nowrap;
@@ -339,7 +397,6 @@ line-height: 18px; /* 128.571% */
     align-items: center;  
     margin: 20px 150px;
     padding: 50px 0px;
-
 }
 #copyright{
     color: var(--c-1, #FFF);
