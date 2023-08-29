@@ -249,9 +249,11 @@
     margin: 100px 150px 0px 150px;
 
 }
-#immobilier{
+#immobilier img{
     width: 537.75px;
     height: 565.547px;
+    padding-top: 80px;
+    margin-bottom: 0%;
     flex-shrink: 0;
     background-color: rgb(209, 242, 253);
 }
