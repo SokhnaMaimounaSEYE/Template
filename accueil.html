@@ -89,62 +89,88 @@
     .search-text-color::placeholder{
       color:#2C226D!important;
     }
+    .mon-header{
+      background-image: url("façade batiment.jpg"); 
+      opacity: 100%;
+      background-repeat: no-repeat;
+      margin-right: 0px;
+    }
+    .mon-header p{
+      flex: 1 0 0;
+      color: var(--c-1, #FFF);
+      text-align: center;
 
+      /* Normal */
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 128.571% */
+      margin: 150px 254px 231px 212px;
+    }
+    .mon-header h1{
+      margin: 70px 287px 254px 212px;
+    }
   </style>
 </head>
 
 <body class="container-fluid">
 
-  <nav id="mon-menu" class="navbar navbar-expand-lg bg-body-tertiary"
-    background="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/façade batiment.jpg">
-    <div class="container-fluid">
-      <div class="logo">
-        <img src="SomadImmologo.png" alt="logo" title="logo" type="logo"></img>
-        <span class="navbar-toggler-icon"></span>
+<header class="mon-header">
+  <div>
+    <nav id="mon-menu" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="SomadImmologo.png" alt="logo" title="logo" type="logo"></img>
+          <span class="navbar-toggler-icon"></span>
+        </div>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="font-level-2 navbar-nav me-auto mb-2 mb-lg-0 text-ubuntu-bold">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/apropos.html">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/services.html">Nos
+                services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link btn btn-primary custom-blue-btn" aria-current="page"
+                href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/offres.html">Nos
+                offres</button>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 font-level-2 search-text-color" type="search" placeholder="Saisir le texte recherché" aria-label="Search">
+            <button id="search" class="text-regular ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="font-level-2 navbar-nav me-auto mb-2 mb-lg-0 text-ubuntu-bold">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/apropos.html">A propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/services.html">Nos
-              services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link btn btn-primary custom-blue-btn" aria-current="page"
-              href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/offres.html">Nos
-              offres</button>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 font-level-2 search-text-color" type="search" placeholder="Saisir le texte recherché" aria-label="Search">
-          <button id="search" class="text-regular ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor" class="bi bi-search"
-              viewBox="0 0 16 16">
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
-  <h1>
-    <center>Lorem ipsum dolor sit amet, consectetur <br>
-      adipiscing elit. Et amet</center>
-  </h1>
+    </nav>
+  </div>
+  <div>
+    <h1>
+      <center>Lorem ipsum dolor sit amet, consectetur <br>
+        adipiscing elit. Et amet</center>
+    </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum</p>
+  </div>
+</header>
 
   <div id="description-block">
     <div class="row" id="description">
@@ -260,6 +286,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        
       </div>
       
 
