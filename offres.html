@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1
+/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @font-face {
+          font-family: UbuntuBold;
+          src: url('fonts/Ubuntu-Bold.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuBoldItalic;
+          src: url('fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuItalic;
+          src: url('fonts/Ubuntu-Italic.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuLight;
+          src: url('fonts/Ubuntu-Light.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuMedium;
+          src: url('fonts/Ubuntu-Medium.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuMediumItalic;
+          src: url('fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuRegular;
+          src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
+        }
+        @font-face {
+          font-family: Rametto One;
+          src: url('fonts/Rametto-One.ttf') format('truetype');
+        }
+    
+        .text-regular {
+          font-family: 'UbuntuRegular' !important;
+        }
+    
+        .text-ubuntu-bold {
+          font-family: 'UbuntuBold' !important;
+        }
+    
+        body {
+          font-family: 'UbuntuRegular'!important;
+        }
+    
+        .nav-link{
+          color:black;
+        }
+        
+        .nav-link.active{
+          color:#51ACE0!important;
+        }
+    
+        .nav-link:not(.btn):hover{
+          color:#51ACE0!important;
+        }
+    
+        .nav-link.btn:hover{
+          color:#51ACE0!important;
+          background-color: white!important;
+        }
+    
+        .custom-blue-btn{
+          color:white;
+          padding-left: 1.2em !important;
+          padding-right: 1.2em !important;
+          background-color: #51ACE0!important;
+          border-color: #51ACE0!important;
+        }
+    
+        .font-level-2{
+          font-size: 1.2rem!important;
+        }
+    
+        .search-text-color::placeholder{
+          color:#2C226D!important;
+        }
+        .mon-header{
+          opacity: 100%;
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+        .mon-header p{
+          flex: 1 0 0;
+          color: var(--c-1, black);
+          text-align: justify;
+          margin-top: 80px;
+          /* Normal */
+          font-family: Ubuntu;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px; /* 128.571% */
+        }
+        .mon-header h1{
+          margin: 70px 287px 254px 212px;
+          align-self: stretch;
+          color: var(--c-1, black);
+          text-align: justify;
+    
+          /* T1 */
+          font-family: Rammetto One;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+    </style>
+</head>
+<body>
+    <header class="mon-header">
+        <div>
+          <nav id="mon-menu" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="logo">
+                <img src="Images/SomadImmologo.png" alt="logo" title="logo" type="logo"></img>
+                <span class="navbar-toggler-icon"></span>
+              </div>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="font-level-2 navbar-nav me-auto mb-2 mb-lg-0 text-ubuntu-bold">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"
+                      href="apropos.html">A propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"
+                      href="services.html">Nos
+                      services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-primary custom-blue-btn" aria-current="page" href="offres.html">Nos offres</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 font-level-2 search-text-color" type="search" placeholder="Saisir le texte recherché" aria-label="Search">
+                  <button id="search" class="text-regular ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor" class="bi bi-search"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="row">
+            <div class="col sml-12 med-6 lrg-6">
+                <h1 class="text-ubuntu-bold">Nos offres</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum</p>
+            </div>
+            <div class="col sml-12 med-6 lrg-6"></div>
+        </div>
+        
+    </header>
+</body>
+</html>

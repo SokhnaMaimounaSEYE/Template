@@ -44,6 +44,10 @@
       font-family: UbuntuRegular;
       src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
     }
+    @font-face {
+      font-family: Rametto One;
+      src: url('fonts/Rametto-One.ttf') format('truetype');
+    }
 
     .text-regular {
       font-family: 'UbuntuRegular' !important;
@@ -90,7 +94,7 @@
       color:#2C226D!important;
     }
     .mon-header{
-      background-image: url("Immobilier1.jpg"); 
+      background-image: url("Images/Immobilier1.png"); 
       opacity: 100%;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -99,7 +103,7 @@
       flex: 1 0 0;
       color: var(--c-1, #FFF);
       text-align: center;
-
+      margin-top: 80px;
       /* Normal */
       font-family: Ubuntu;
       font-size: 14px;
@@ -107,8 +111,33 @@
       font-weight: 400;
       line-height: 18px; /* 128.571% */
     }
-    .mon-header h1{
-      margin: 70px 287px 254px 212px;
+    .entete h1{
+      margin: 70px 287px 0px 212px;
+      align-self: stretch;
+      color: var(--c-1, #FFF);
+      text-align: center;
+
+      /* T1 */
+      font-family: Rammetto One;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .entete p{
+      margin-top: 20px;
+    }
+    .entete{
+      margin-bottom: 151px;
+    }
+    #bas-de-mon-header{
+      width: 1148px;
+      height: 145px;
+      fill: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
+      margin-left: 170px;
+      margin-right: 0px;
+      margin-top: 16px;
+      margin-bottom: 85px;
     }
   </style>
 </head>
@@ -116,58 +145,68 @@
 <body class="container-fluid">
 
 <header class="mon-header">
-  <div>
-    <nav id="mon-menu" class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="logo">
-          <img src="SomadImmologo.png" alt="logo" title="logo" type="logo"></img>
-          <span class="navbar-toggler-icon"></span>
+  <div id="contenu-de-mon-header">
+    <div>
+      <nav id="mon-menu" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="Images/SomadImmologo.png" alt="logo" title="logo" type="logo"></img>
+            <span class="navbar-toggler-icon"></span>
+          </div>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="font-level-2 navbar-nav me-auto mb-2 mb-lg-0 text-ubuntu-bold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="apropos.html">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="services.html">Nos
+                  services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary custom-blue-btn" aria-current="page" href="offres.html">Nos offres</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 font-level-2 search-text-color" type="search" placeholder="Saisir le texte recherché" aria-label="Search">
+              <button id="search" class="text-regular ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="font-level-2 navbar-nav me-auto mb-2 mb-lg-0 text-ubuntu-bold">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
-                href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/apropos.html">A propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
-                href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/services.html">Nos
-                services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
-                href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <button class="nav-link btn btn-primary custom-blue-btn" aria-current="page"
-                href="Sans titre/Utilisateurs/ndamaguette/Documents/SOXNA MAY/Proteus/bootstrap/offres.html">Nos
-                offres</button>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 font-level-2 search-text-color" type="search" placeholder="Saisir le texte recherché" aria-label="Search">
-            <button id="search" class="text-regular ">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div>
-    <h1>
-      <center>Lorem ipsum dolor sit amet, consectetur <br>
-        adipiscing elit. Et amet</center>
-    </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum</p>
+      </nav>
+    </div>
+    <div class="entete">
+      <h1 class="text-ubuntu-bold">
+        Lorem ipsum dolor sit amet, consectetur <br>
+          adipiscing elit. Et amet
+      </h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum</p>
+    </div>
+    <div>
+      <svg id="bas-de-mon-header" xmlns="http://www.w3.org/2000/svg" width="1148" height="145" viewBox="0 0 1148 145" fill="none">
+        <path d="M0 0L671.619 36L1148 61L0 145V0Z" fill="url(#paint0_linear_237_1158)"/>
+        <defs>
+          <linearGradient id="paint0_linear_237_1158" x1="48.167" y1="88.1154" x2="1229.06" y2="10.3779" gradientUnits="userSpaceOnUse">
+            <stop offset="0.302083" stop-color="#07466A"/>
+            <stop offset="1" stop-color="#51ACE0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
   </div>
 </header>
 
@@ -199,7 +238,7 @@
         <button type="button" id="button">En savoir +</button>
       </div>
       <div class="col sml-12 med-6 lrg-6">
-        <img src="Frame 4141.png" alt="image" type="image">
+        <img src="Images/Frame 4141.png" alt="image" type="image">
       </div>
     </div>
   </div>
@@ -219,35 +258,35 @@
             </div>
             <div class="row">
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Frame 4163.png" alt="favicon" type="favicon"></div>
+                <div><img src="Images/Frame 4163.png" alt="favicon" type="favicon"></div>
                 <div>
                   <h5 id="vente">Vente immobilière</h5>
                   <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
                 </div>
               </div>
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Frame 4163 (1).png" alt="favicon" type="favicon"></div>
+                <div><img src="Images/Frame 4163 (1).png" alt="favicon" type="favicon"></div>
                 <div>
                   <h5 id="location">Location immobilière</h5>
                   <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
                 </div>
               </div>
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Frame 4163 (2).png" alt="favicon" type="favicon"></div>
+                <div><img src="Images/Frame 4163 (2).png" alt="favicon" type="favicon"></div>
                 <div>
                   <h5 id="syndic">Syndic de copropriété</h5>
                   <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
                 </div>
               </div>
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Frame 4163 (3).png" alt="favicon" type="favicon"></div>
+                <div><img src="Images/Frame 4163 (3).png" alt="favicon" type="favicon"></div>
                 <div>
                   <h5 id="accompagnement">Accompagnement & conseil immobilier</h5>
                   <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
                 </div>
               </div>
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Frame 4163 (4).png" alt="favicon" type="favicon"></div>
+                <div><img src="Images/Frame 4163 (4).png" alt="favicon" type="favicon"></div>
                 <div>
                   <h5 id="formation">Formation en gestion immobilière</h5>
                   <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
@@ -259,7 +298,7 @@
       <div id="projets-perso">
         <div class="row">
           <div class="col sml-12 med-6 lrg-6" id="immobilier">
-            <img src="Immobilier2.png" alt="image" type="image">
+            <img src="Images/Immobilier2.png" alt="image" type="image">
           </div>
           <div class="col sml-12 med-6 lrg-6">
             <div id="experiments">
@@ -286,15 +325,29 @@
           </div>
         </div>
       </div>
-      <div>
-        
+      <div class="produits">
+        <div class="contenus-produits">
+          <div class="row" id="produits">
+            <div><h6 class="col sml-6 med-2 lrg-2">PRODUITS</h6></div>
+            <div><hr class="col sml-6 med-2 lrg-2"></div>
+          </div>
+          <div class="row">
+            <div class="col sml-12 med-6 lrg-6" id="textproduits">
+              <h3>Lorem ipsum dolor</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum dolor sit amet, consectetur adipiscing elit.  ipsum dolor sit </p>
+            </div>
+            <div class="col sml-12 med-6 lrg-6">
+              <button type="button" id="voir-offres">Voir les offres</button>
+            </div>
+          </div>
+        </div>
       </div>
       
 
   <footer>
     <div class="row" id="footer">
       <div class="col sml-12 med-3 lrg-3">
-        <img src="SomadImmologo1.png" alt="logo" title="logo" type="logo"></img><br>
+        <img src="Images/SomadImmologo1.png" alt="logo" title="logo" type="logo"></img><br>
         <br>
         <p>
           Lorem ipsum dolor sit amet, consectetur
