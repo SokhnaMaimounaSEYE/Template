@@ -227,22 +227,42 @@
           <div class="row" id="pub">
             <div class="col sml-12 med-2.75 lrg-2.75">
               <h6>Type</h6>
-              <button id="bouton" type="button">Tous les types</button>
+              <form>
+                <select name="type" id="type">
+                  <option value="types">Tous les types</option>
+                  <option value="maison">Maison</option>
+                  <option value="appartement">Appartement</option>
+                  <option value="terrain">Terrain</option>
+                  <option value="villa">Villa</option>
+                </select>
+              </form>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
               <h6>Date de pub</h6>
-              <button id="bouton" type="button">Tous les projets</button>
+              <form>
+                <select name="projet" id="projet">
+                  <option value="projets">Tous les projets</option>
+                </select>
+              </form>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
               <h6>Arrondissement</h6>
-              <button id="bouton" type="button">Tous les arrondissements</button>
+              <form>
+                <select name="arrondissement" id="arrondissement">
+                  <option value="arrondissements">Tous les arrondissements</option>
+                  <option value=""></option>
+                </select>
+              </form>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
               <h6>Village ou quartier de ville</h6>
-              <button id="bouton" type="button">Tous les villages et quartiers de ville</button>
+              <form>
+                <select name="village-quartier" id="village-quartier">
+                  <option value="villages-quartiers">Tous les villages et quartiers de ville</option>
+                </select>
+              </form>
             </div>
             <div class="col sml-12 med-1 lrg-1">
-              <br>
               <br><button id="recherche" type="button">Rechercher</button>
             </div>
           </div>
