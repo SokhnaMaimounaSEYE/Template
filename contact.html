@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Propos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1
+/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @font-face {
+          font-family: UbuntuBold;
+          src: url('fonts/Ubuntu-Bold.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuBoldItalic;
+          src: url('fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuItalic;
+          src: url('fonts/Ubuntu-Italic.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuLight;
+          src: url('fonts/Ubuntu-Light.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuMedium;
+          src: url('fonts/Ubuntu-Medium.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuMediumItalic;
+          src: url('fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+        }
+    
+        @font-face {
+          font-family: UbuntuRegular;
+          src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
+        }
+        @font-face {
+          font-family: Rametto One;
+          src: url('fonts/Rametto-One.ttf') format('truetype');
+        }
+    
+        .text-regular {
+          font-family: 'UbuntuRegular' !important;
+        }
+    
+        .text-ubuntu-bold {
+          font-family: 'UbuntuBold' !important;
+        }
+    
+        body {
+          font-family: 'UbuntuRegular'!important;
+        }
+        .logo{
+          margin-right: 50px;
+        }
+        .nav-link{
+          color:black;
+        }
+        
+        .nav-link.active{
+          color:#51ACE0!important;
+        }
+    
+        .nav-link:not(.btn):hover{
+          color:#51ACE0!important;
+        }
+    
+        .nav-link.btn:hover{
+          color:#51ACE0!important;
+          background-color: white!important;
+        }
+    
+        .custom-blue-btn{
+          color:white;
+          padding-left: 1.2em !important;
+          padding-right: 1.2em !important;
+          background-color: #51ACE0!important;
+          border-color: #51ACE0!important;
+        }
+    
+        .font-level-2{
+          font-size: 1.2rem!important;
+        }
+    
+        .search-text-color::placeholder{
+          color:#2C226D!important;
+        }
+        #mon-menu{
+          opacity: 100%;
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+        .container-fluid{
+          margin: 150px;
+          margin-top: 0%;
+          margin-bottom: 0%;
+        }
+        #entete h1{
+          margin: 70px 287px 0px 150px;
+          align-self: stretch;
+          color: black;
+          text-align: justify;
+
+          /* T1*/
+          font-family: Rammetto One;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        #entete p{
+          margin-top: 20px;
+          margin-left: 150px;
+          color: var(--c-1, black);
+          text-align: justify;
+          /* Normal*/
+          font-family: Ubuntu;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px; /* 128.571%*/
+        }
+        #entete{
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header class="mon-header">
+        <div>
+          <nav id="mon-menu" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="logo">
+                <img src="Images/SomadImmologo.png" alt="logo" title="logo" type="logo"></img>
+                <span class="navbar-toggler-icon"></span>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="font-level-2 navbar-nav me-auto mb-2 mb-lg-0 text-ubuntu-bold">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"
+                      href="apropos.html">A propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"
+                      href="services.html">Nos
+                      services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-primary custom-blue-btn" aria-current="page" href="offres.html">Nos offres</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 font-level-2 search-text-color" type="search" placeholder="Saisir le texte recherché" aria-label="Search">
+                  <button id="search" class="text-regular ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor" class="bi bi-search"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div>
+          <div class="row" id="entete" >
+              <div class="col sml-12 med-6 lrg-6">
+                  <h1 class="text-ubuntu-bold">Contactez-nous</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum</p>
+              </div>
+              <div class="col sml-12 med-6 lrg-6"></div>
+          </div>
+        </div>
+        
+    </header>
+
+    <footer>
+        <div class="row" id="footer">
+          <div class="col sml-12 med-3 lrg-3">
+            <img src="Images/SomadImmologo1.png" alt="logo" title="logo" type="logo"></img><br>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Et amet, ravidaLorem
+              ipsum dolor sit amet, consectetur
+              adipiscing elit. ipsum dolor sit amet,
+              consectetur adipiscing elit. Et amet,
+              gravidaLorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Et amet, gr
+            </p>
+          </div>
+          <div class="col sml-12 med-2 lrg-2">
+            <h5>Titre footer</h5>
+            <ul>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col sml-12 med-2 lrg-2">
+            <h5>Titre footer</h5>
+            <ul class="">
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col sml-12 med-2 lrg-2">
+            <h5>Titre footer</h5>
+            <ul>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+              <li class="list">
+                <a class="lire-plus" href="#">Lire plus</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col sml-12 med-3 lrg-3">
+            <h5>Newsletter</h5>
+            <form action="inscription">
+              <input class="email" type="email" placeholder="Veuillez saisir votre adresse e-mail" aria-label="email">
+              <br><button class="row" id="condition">
+                <div></div>
+                <div>
+                  <p>Je ne suis pas un robot</p>
+                </div>
+                <div><svg class="robot" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group">
+                      <path id="Vector"
+                        d="M32.0001 15.6122C31.9993 15.3874 31.9941 15.1637 31.9841 14.9411V2.25116L28.4758 5.75941C25.6045 2.24482 21.2365 0 16.344 0C11.2524 0 6.72914 2.43029 3.86978 6.19397L9.62023 12.0049C10.1838 10.9627 10.9844 10.0675 11.9496 9.39139C12.9536 8.60795 14.3761 7.96738 16.3438 7.96738C16.5815 7.96738 16.765 7.99516 16.8998 8.04749C19.3378 8.23992 21.4511 9.5854 22.6954 11.5383L18.625 15.6087C23.7807 15.5885 29.6051 15.5766 31.9996 15.6113"
+                        fill="#1C3AA9" />
+                      <path id="Vector_2"
+                        d="M16.2525 0.000488281C16.0276 0.00123495 15.804 0.00642431 15.5814 0.0165043H2.89142L6.39967 3.52476C2.88508 6.39606 0.640259 10.7641 0.640259 15.6566C0.640259 20.7481 3.07058 25.2714 6.83423 28.1308L12.6452 22.3803C11.6029 21.8168 10.7078 21.0162 10.0316 20.0509C9.24824 19.047 8.60764 17.6245 8.60764 15.6568C8.60764 15.4191 8.63542 15.2356 8.68775 15.1008C8.88018 12.6628 10.2257 10.5495 12.1785 9.30515L16.249 13.3756C16.2287 8.21987 16.2168 2.3955 16.2516 0.000936178"
+                        fill="#4285F4" />
+                      <path id="Vector_3"
+                        d="M0.640839 15.6562C0.641585 15.8811 0.646775 16.1048 0.656855 16.3274V29.0173L4.16511 25.5091C7.03641 29.0237 11.4044 31.2685 16.2969 31.2685C21.3885 31.2685 25.9118 28.8382 28.7711 25.0745L23.0207 19.2636C22.4571 20.3058 21.6566 21.201 20.6913 21.8771C19.6873 22.6605 18.2649 23.3011 16.2971 23.3011C16.0594 23.3011 15.8759 23.2733 15.7411 23.221C13.3031 23.0286 11.1898 21.6831 9.9455 19.7302L14.016 15.6598C8.86022 15.68 3.03585 15.6919 0.641287 15.6572"
+                        fill="#ABABAB" />
+                    </g>
+                  </svg>
+                </div>
+              </button>
+              <br><button type="submit" class="btn btn-primary" id="submit">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+        <div id="copyright">
+          &copy; 2023
+          <?php echo date('Y');?>
+        </div>
+    
+    </footer>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>

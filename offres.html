@@ -130,7 +130,8 @@
           line-height: 18px; /* 128.571%*/
         }
         #entete{
-          margin-bottom: 151px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
         }
         .pub{
           margin-top: 0%;
@@ -157,6 +158,15 @@
           align-self: stretch;
           border-radius: 5px;
           border: 1px solid var(--Contour-simple, rgba(35, 31, 32, 0.20));
+        }
+        #recherche{
+          display: flex;
+          padding: 12px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 5px;
+          border: 2px solid var(--Porto-Novo-couleur-principale, #2564A9);
         }
     </style>
 </head>
@@ -205,8 +215,8 @@
           </nav>
         </div>
         <div>
-          <div class="row">
-              <div class="col sml-12 med-6 lrg-6" id="entete">
+          <div class="row" id="entete" >
+              <div class="col sml-12 med-6 lrg-6">
                   <h1 class="text-ubuntu-bold">Nos offres</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum</p>
               </div>
@@ -217,22 +227,23 @@
           <div class="row" id="pub">
             <div class="col sml-12 med-2.75 lrg-2.75">
               <h6>Type</h6>
-              <button>Tous les types</button>
+              <button id="bouton" type="button">Tous les types</button>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
               <h6>Date de pub</h6>
-              <button>Tous les projets</button>
+              <button id="bouton" type="button">Tous les projets</button>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
               <h6>Arrondissement</h6>
-              <button>Tous les arrondissements</button>
+              <button id="bouton" type="button">Tous les arrondissements</button>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
               <h6>Village ou quartier de ville</h6>
-              <button>Tous les villages et quartiers de ville</button>
+              <button id="bouton" type="button">Tous les villages et quartiers de ville</button>
             </div>
             <div class="col sml-12 med-1 lrg-1">
-
+              <br>
+              <br><button id="recherche" type="button">Rechercher</button>
             </div>
           </div>
         </div>
