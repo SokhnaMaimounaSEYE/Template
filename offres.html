@@ -139,7 +139,7 @@
         #pub{
           margin: 150px;
         }
-        #pub h6{
+        #pub label{
           width: 180px;
           color: #000;
 
@@ -150,16 +150,7 @@
           font-weight: 700;
           line-height: 18px; /* 128.571% */
         }
-        #pub button{
-          display: flex;
-          padding: 0px 10px;
-          justify-content: space-between;
-          align-items: justify;
-          align-self: stretch;
-          border-radius: 5px;
-          border: 1px solid var(--Contour-simple, rgba(35, 31, 32, 0.20));
-        }
-        #recherche{
+        #rechercher{
           display: flex;
           padding: 12px 20px;
           justify-content: center;
@@ -167,6 +158,8 @@
           gap: 10px;
           border-radius: 5px;
           border: 2px solid var(--Porto-Novo-couleur-principale, #2564A9);
+          color: var(--Porto-Novo-couleur-principale, #2564A9);
+          background-color: white;
         }
     </style>
 </head>
@@ -226,8 +219,8 @@
         <div class="pub">
           <div class="row" id="pub">
             <div class="col sml-12 med-2.75 lrg-2.75">
-              <h6>Type</h6>
-              <form>
+              <form action="#">
+                <label for="type">Type</label><br>
                 <select name="type" id="type">
                   <option value="types">Tous les types</option>
                   <option value="maison">Maison</option>
@@ -238,16 +231,16 @@
               </form>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
-              <h6>Date de pub</h6>
-              <form>
+              <form action="#">
+                <label for="projet">Date de pub</label>
                 <select name="projet" id="projet">
                   <option value="projets">Tous les projets</option>
                 </select>
               </form>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
-              <h6>Arrondissement</h6>
-              <form>
+              <form action="#">
+                <label for="arrondissement">Arrondissement</label>
                 <select name="arrondissement" id="arrondissement">
                   <option value="arrondissements">Tous les arrondissements</option>
                   <option value=""></option>
@@ -255,15 +248,15 @@
               </form>
             </div>
             <div class="col sml-12 med-2.75 lrg-2.75">
-              <h6>Village ou quartier de ville</h6>
-              <form>
+              <form action="#">
+                <label for="village-quartier">Village ou quartier de ville</label>
                 <select name="village-quartier" id="village-quartier">
                   <option value="villages-quartiers">Tous les villages et quartiers de ville</option>
                 </select>
               </form>
             </div>
             <div class="col sml-12 med-1 lrg-1">
-              <br><button id="recherche" type="button">Rechercher</button>
+              <br><input id="rechercher" type="submit" value="Rechercher" />
             </div>
           </div>
         </div>
