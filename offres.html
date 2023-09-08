@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offres</title>
+    <title>Nos offres</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1
 /css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous">
@@ -95,17 +95,19 @@
           color:#2C226D!important;
         }
         #mon-menu{
-          opacity: 100%;
-          background-repeat: no-repeat;
+          background-color: white;
           background-size: 100%;
+          width: 100%;
         }
         .container-fluid{
-          margin: 150px;
-          margin-top: 0%;
-          margin-bottom: 0%;
+          padding: 0px 150px;
+          
+        }
+        #entete{
+          padding:20px 150px ;
+          width: 100%;
         }
         #entete h1{
-          margin: 70px 287px 0px 150px;
           align-self: stretch;
           color: black;
           text-align: justify;
@@ -118,8 +120,6 @@
           line-height: normal;
         }
         #entete p{
-          margin-top: 20px;
-          margin-left: 150px;
           color: var(--c-1, black);
           text-align: justify;
           /* Normal*/
@@ -129,17 +129,11 @@
           font-weight: 400;
           line-height: 18px; /* 128.571%*/
         }
-        #entete{
-          padding-bottom: 0px;
-          margin-bottom: 0px;
-        }
         .pub{
-          margin-top: 0%;
+          padding: 20px 150px;
+          width: 100%;
         }
-        #pub{
-          margin: 150px;
-        }
-        #pub label{
+        .pub label{
           width: 180px;
           color: #000;
 
@@ -152,7 +146,7 @@
         }
         #rechercher{
           display: flex;
-          padding: 12px 20px;
+          padding: 1px 20px;
           justify-content: center;
           align-items: center;
           gap: 10px;
@@ -207,8 +201,8 @@
             </div>
           </nav>
         </div>
-        <div>
-          <div class="row" id="entete" >
+        <div id="entete">
+          <div class="row">
               <div class="col sml-12 med-6 lrg-6">
                   <h1 class="text-ubuntu-bold">Nos offres</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum</p>
@@ -217,7 +211,7 @@
           </div>
         </div>
         <div class="pub">
-          <div class="row" id="pub">
+          <div class="row">
             <div class="col sml-12 med-2.75 lrg-2.75">
               <form action="#">
                 <label for="type">Type</label><br>
@@ -243,7 +237,16 @@
                 <label for="arrondissement">Arrondissement</label>
                 <select name="arrondissement" id="arrondissement">
                   <option value="arrondissements">Tous les arrondissements</option>
-                  <option value=""></option>
+                  <option value="almadies">Arrondissement des Almadies</option>
+                  <option value="dakar-plateau">Arrondissement de Dakar Plateau</option>
+                  <option value="grand-dakar">Arrondissement de Grand Dakar</option>
+                  <option value="parcelles-assainies">Arrondissement des Parcelles Assainies</option>
+                  <option value="guédiawaye">Arrondissement de Guédiawaye</option>
+                  <option value="rufisque">Arrondissement de Rufisque</option>
+                  <option value="thiaroye">Arrondissement de Thiaroye</option>
+                  <option value="niayes">Arrondissement des Niayes</option>
+                  <option value="dagoudane">Arrondissement de Dagoudane</option>
+                  <option value="bambilor">Arrondissement de Bambilor</option>
                 </select>
               </form>
             </div>

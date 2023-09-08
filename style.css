@@ -25,7 +25,6 @@
 }
 #mon-menu{
     display: flex;
-    align-items: center;  
     
 }
 .navbar-collapse{
@@ -64,8 +63,9 @@
     align-self: stretch;
 }
 #apropos hr{
-    width: 150px;
-    height: 1.5px;
+    width: 100px;
+    height: 1px;
+    margin-top: 6px;
     background: #434343;
 }
 #apropos h3{
@@ -103,6 +103,7 @@
 }
 #description-block{
     background-color: white;
+    width: 100%;
 }
 #description{
     margin: 60px 100px 150px 150px;
@@ -116,6 +117,7 @@
     flex-shrink: 0;
     align-self: stretch;
     text-align: justify;
+    width: 100%;
 }
 #textapropos h6{
     color: white;
@@ -131,8 +133,9 @@
     align-self: stretch;
 }
 #textapropos hr{
-    width: 150px;
-    height: 1.5px;
+    width: 100px;
+    height: 1px;
+    margin-top: 6px;
     background-color: white;
 }
 #textapropos h3{
@@ -256,8 +259,8 @@
     line-height: 22px; /* 157.143% */
 }
 #projets-perso{
-    margin: 100px 150px 0px 150px;
-
+    padding: 150px;
+    width: 100%;
 }
 #immobilier img{
     width: 537.75px;
@@ -311,8 +314,9 @@
     font-weight: 400;
     line-height: 18px; /* 128.571% */
 }
-.contenus-produits{
-    margin: 150px;
+.produits{
+    width: 100%;
+    padding: 150px;
 }
 #produits h6{
     color: #434343;
@@ -325,13 +329,13 @@
     line-height: 16px; /* 145.455% */
     text-transform: uppercase;
     display: flex;
-    align-items: center;
     gap: 20px;
     align-self: stretch;
 }
 #produits hr{
-    width: 150px;
-    height: 1.5px;
+    width: 100px;
+    height: 1px;
+    margin-top: 6px;
     background: #434343;
 }
 #textproduits h3{
@@ -493,4 +497,85 @@ line-height: 18px; /* 128.571% */
 
 .entete p{
     color: #000000;
+}
+.histoire{
+    padding: 50px 150px;
+    width: 100%;
+}
+.histoire h2{
+    margin: 70px 287px 0px 0px;
+    align-self: stretch;
+    color: black;
+    text-align: justify;
+        /* T1*/
+    font-family: Rammetto One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.histoire p{
+    margin-top: 20px;
+    color: var(--c-1, black);
+    text-align: justify;
+        /* Normal*/
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571%*/
+}
+.vision{
+    padding: 50px 150px;
+    width: 100%;
+}
+.vision h2{
+    margin: 70px 287px 0px 0px;
+    align-self: stretch;
+    color: black;
+    text-align: justify;
+        /* T1*/
+    font-family: Rammetto One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.vision p{
+    margin-top: 20px;
+    color: var(--c-1, black);
+    text-align: justify;
+        /* Normal*/
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571%*/
+}
+.auteurs{
+    padding: 50px 150px;
+    width: 100%;
+}
+.auteurs h2{
+    margin: 70px 287px 0px 0px;
+    align-self: stretch;
+    color: black;
+    text-align: justify;
+        /* T1*/
+    font-family: Rammetto One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.auteurs p{
+    margin-top: 20px;
+    color: var(--c-1, black);
+    text-align: justify;
+        /* Normal*/
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571%*/
 }
