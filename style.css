@@ -131,11 +131,12 @@
     align-items: center;
     gap: 20px;
     align-self: stretch;
+    margin-top: 20px;
 }
 #textapropos hr{
     width: 100px;
     height: 1px;
-    margin-top: 6px;
+    margin-top: 26px;
     background-color: white;
 }
 #textapropos h3{
