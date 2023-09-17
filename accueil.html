@@ -63,6 +63,8 @@
 
     .nav-link{
       color:black;
+      font-size: 14px;
+      
     }
     
     .nav-link.active{
@@ -93,11 +95,24 @@
     .search-text-color::placeholder{
       color:#2C226D!important;
     }
+    .mon-header #voiroffres{
+      color: white;
+      display: flex;
+      padding: 5px 25px;
+      gap: 10px;
+      border-radius: 5px;
+      border-width: 2px;
+      border-color: white 100% ;
+      opacity: 100%;
+      background: none;
+      margin: 25px 400px;
+    }
     .mon-header{
       background-image: url("Images/Immobilier1.png"); 
       opacity: 100%;
       background-repeat: no-repeat;
       background-size: 100%;
+      
     }
     .mon-header p{
       flex: 1 0 0;
@@ -125,20 +140,22 @@
       line-height: normal;
     }
     .entete p{
-      margin-top: 20px;
+      margin: 20px 200px;
       text-align: center;
     }
     .entete{
       margin-bottom: 151px;
     }
+    
     #bas-de-mon-header{
-      width: auto;
-      height: 145px;
+      width: 1000px;
+      height: 150px;
       fill: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
-      margin-left: 170px;
-      margin-right: 0px;
+      margin-left: 150px;
+      margin-right: 150px;
       margin-top: 16px;
-      margin-bottom: 85px;
+      margin-bottom: 0px;
+      background: none;
     }
   </style>
 </head>
@@ -198,6 +215,9 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum</p>
     </div>
     <div>
+      <button type="button" id="voiroffres">Voir les offres</button>
+    </div>
+    <div>
       <svg id="bas-de-mon-header" xmlns="http://www.w3.org/2000/svg" width="1148" height="145" viewBox="0 0 1148 145" fill="none">
         <path d="M0 0L671.619 36L1148 61L0 145V0Z" fill="url(#paint0_linear_237_1158)"/>
         <defs>
@@ -210,7 +230,6 @@
     </div>
   </div>
 </header>
-
   <div id="description-block">
     <div class="row" id="description">
       <div class="col sml-12 med-6 lrg-6" id="apropos">
@@ -222,24 +241,29 @@
             <hr class="col sml-6 med-2 lrg-2">
           </div>
         </div>
-        <h3>Lorem ipsum dolor</h3>
+        <h3>Lorem ipsum dolor</h3><br>
         <p>Nous sommes une agence immobilière qui satisfait vos moindre préoccupation en termes de location, vente,
-          construction ...
-          Nous mettons á votre disposition une équipe dynamique et trés expérimentée. Tous vos besoins en immobilier
-          seront satisfaits chez nous.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum dolor sit amet,
-          consectetur adipiscing elit. ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          construction ... <br>
+          Nous mettons á votre disposition une équipe dynamique et trés expérimentée. <br> Tous vos besoins en immobilier
+          seront satisfaits chez nous. <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem <br> ipsum dolor sit amet,
+          consectetur adipiscing elit. ipsum dolor sit Lorem ipsum <br> dolor sit amet, consectetur adipiscing elit.
         </p>
-        <p>
-          Nous sommes une agence immobilière qui satisfait vos moindre préoccupation en termes de location, vente,
-          construction ...
-          Nous mettons á votre disposition une équipe dynamique et trés expérimentée. Tous vos besoins en immobilier
-          seront satisfaits chez nous.Lorem ipsum dolor sit amet
-        </p>
+        <div class="row">
+          <hr style="width:3px ; height:100px; size:1%; margin-top: 0px; margin-left: 30px; background-color:#07466A ;" align="left" >
+          <div class="col 5">
+            <p style="margin-left: 0px; grid-template-columns: max-content;">
+              Nous sommes une agence immobilière qui satisfait vos moindre préoccupation en termes de location, vente,
+              construction ... <br>
+              Nous mettons á votre disposition une équipe dynamique et trés <br> expérimentée. Tous vos besoins en immobilier
+              seront satisfaits chez <br> nous.Lorem ipsum dolor sit amet
+            </p>
+          </div>
+        </div>
         <button type="button" id="button">En savoir +</button>
       </div>
       <div class="col sml-12 med-6 lrg-6">
-        <img src="Images/Frame 4141.png" alt="image" type="image">
+        <img src="Images/Frame 4141.png" alt="image" type="image" height="473px" width="647px">
       </div>
     </div>
   </div>
@@ -252,76 +276,80 @@
             </div>
             <div class="row" id="textapropos">
               <div class="col sml-12 med-6 lrg-6">
-                <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum dolor sit amet, consectetur adipiscing elit.  ipsum dolor sit </p>
+                <h3>Lorem ipsum dolor</h3><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum dolor sit amet,<br> consectetur adipiscing elit.  ipsum dolor sit </p><br>
               </div>
               <div class="col sml-12 med-6 lrg-6"></div>
             </div>
             <div class="row">
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Images/Frame 4163.png" alt="favicon" type="favicon"></div>
-                <div>
-                  <h5 id="vente">Vente immobilière</h5>
-                  <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
+                <div><img src="Images/Frame 4163.png" alt="favicon" type="favicon"></div><br>
+                <div id="vente">
+                  <h5>Vente immobilière</h5>
+                  <br><p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Et<br> amet, ravidaLorem </p>
                 </div>
               </div>
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Images/Frame 4163 (1).png" alt="favicon" type="favicon"></div>
-                <div>
-                  <h5 id="location">Location immobilière</h5>
-                  <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
+                <div><img src="Images/Frame 4163 (1).png" alt="favicon" type="favicon"></div><br>
+                <div id="location">
+                  <h5>Location immobilière</h5>
+                  <br><p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Et<br> amet, ravidaLorem </p>
                 </div>
               </div>
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Images/Frame 4163 (2).png" alt="favicon" type="favicon"></div>
-                <div>
-                  <h5 id="syndic">Syndic de copropriété</h5>
-                  <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
+                <div><img src="Images/Frame 4163 (2).png" alt="favicon" type="favicon"></div><br>
+                <div id="syndic">
+                  <h5>Syndic de copropriété</h5>
+                  <br><p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Et<br> amet, ravidaLorem </p>
                 </div>
               </div>
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Images/Frame 4163 (3).png" alt="favicon" type="favicon"></div>
-                <div>
-                  <h5 id="accompagnement">Accompagnement & conseil immobilier</h5>
-                  <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
+                <div><img src="Images/Frame 4163 (3).png" alt="favicon" type="favicon"></div><br>
+                <div id="accompagnement">
+                  <h5>Accompagnement & conseil immobilier</h5>
+                  <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Et<br> amet, ravidaLorem </p>
                 </div>
               </div>
               <div class="col sml-12 med-2.5 lrg-2.5">
-                <div><img src="Images/Frame 4163 (4).png" alt="favicon" type="favicon"></div>
-                <div>
-                  <h5 id="formation">Formation en gestion immobilière</h5>
-                  <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem </p>
+                <div><img src="Images/Frame 4163 (4).png" alt="favicon" type="favicon"></div><br>
+                <div id="formation">
+                  <h5>Formation en gestion immobilière</h5>
+                  <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Et<br> amet, ravidaLorem </p>
                 </div>  
               </div>
             </div>
           </div>
       </div>
       <div id="projets-perso">
+        <div id="projet1" style="background-color: white"></div>
+        <div id="projet2" style="background-color: var(--Couleur-5, linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #FFF)"></div>
         <div class="row">
           <div class="col sml-12 med-6 lrg-6" id="immobilier">
             <img src="Images/Immobilier2.png" alt="image" type="image">
           </div>
           <div class="col sml-12 med-6 lrg-6">
-            <div id="experiments">
-              <h3>Experiments and perso projects.</h3>
-              <p>Nous sommes une agence immobilière qui satisfait vos moindre préoccupation en termes de location, vente, construction . Nous mettons á votre disposition une équipe dynamique et trés expérimentée. Tous vos besoins en immobilier seront satisfaits chez nous.Lorem ipsum dolor sit amet</p>
-            </div>
-            <div>
-              <div class="row" id="chiffres">
-                <div class="col sml-6 med-2 lrg-2">
-                  <h5>45+</h5>
-                  <p>cute costumes</p>
+            <div id="experiments-projects-chiffres">
+              <div id="experiments">
+                <h3>Experiments and perso <br>projects.</h3>
+                <p>Nous sommes une agence immobilière qui satisfait vos moindre préoccupation en termes de location, vente, construction . Nous mettons á votre disposition une équipe dynamique et trés expérimentée. Tous vos besoins en immobilier seront satisfaits chez nous.Lorem ipsum dolor sit amet</p>
+              </div> <br>
+              <div>
+                <div class="row" id="chiffres">
+                  <div class="col sml-6 med-2 lrg-2">
+                    <h5>45+</h5>
+                    <p>cute costumes</p>
+                  </div>
+                  <div class="col sml-6 med-2 lrg-2">
+                    <h5>100+</h5>
+                    <p>cute costumes</p>
+                  </div>
+                  <div class="col sml-6 med-2 lrg-2">
+                    <h5>277+</h5>
+                    <p>cute costumes</p>
+                  </div>
                 </div>
-                <div class="col sml-6 med-2 lrg-2">
-                  <h5>100+</h5>
-                  <p>cute costumes</p>
-                </div>
-                <div class="col sml-6 med-2 lrg-2">
-                  <h5>277+</h5>
-                  <p>cute costumes</p>
-                </div>
+                <button type="button" id="button1">En savoir +</button>
               </div>
-              <button type="button" id="button">En savoir +</button>
             </div>
           </div>
         </div>
@@ -337,9 +365,29 @@
               <h3>Lorem ipsum dolor</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum dolor sit amet, consectetur adipiscing elit.  ipsum dolor sit </p>
             </div>
-            <div class="col sml-12 med-6 lrg-6">
-              <button type="button" id="voir-offres">Voir les offres</button>
+            <div class="col sml-12 med-6 lrg-6" align="right">
+              <button type="button" id="voir_offres">Voir les offres</button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="produits1">
+        <div class="contenus-produits1">
+          <div class="row" id="produits1">
+            <div><h6 class="col sml-6 med-2 lrg-2">PRODUITS</h6></div>
+            <div><hr class="col sml-6 med-2 lrg-2"></div>
+          </div>
+          <div class="row">
+            <div class="col sml-12 med-6 lrg-6" id="textproduits1">
+              <h3>Lorem ipsum dolor</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et amet, ravidaLorem ipsum dolor sit amet, consectetur adipiscing elit.  ipsum dolor sit </p>
+            </div>
+            <div class="col sml-12 med-6 lrg-6" align="right">
+              <button type="button" id="voir_offres">Voir les offres</button>
+            </div>
+          </div>
+          <div>
+            <img src="Images/Frame 178.png" alt="image" type="image">
           </div>
         </div>
       </div>

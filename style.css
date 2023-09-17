@@ -25,6 +25,7 @@
 }
 #mon-menu{
     display: flex;
+    opacity: 100%;
     
 }
 .navbar-collapse{
@@ -47,6 +48,10 @@
     gap: 10px;
     align-self: stretch;
 }
+/*#apropos{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}*/
 #apropos h6{
     color: #434343;
     /*leading-trim: both;
@@ -58,14 +63,15 @@
     line-height: 16px; /* 145.455% */
     text-transform: uppercase;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     gap: 20px;
     align-self: stretch;
+    margin-top: 70px;
 }
 #apropos hr{
     width: 100px;
     height: 1px;
-    margin-top: 6px;
+    margin-top: 76px;
     background: #434343;
 }
 #apropos h3{
@@ -74,7 +80,7 @@
     font-family: Rammetto One;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
     background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
     background-clip: text;
@@ -82,8 +88,9 @@
     -webkit-text-fill-color: transparent;
 }
 #apropos p{
+    width: 100%;
     color: var(--black, #231F20);
-    text-align: justify;
+    text-align: inherit;
 
     /* Normal */
     font-family: Ubuntu;
@@ -94,30 +101,35 @@
 }
 #button{
     display: flex;
-    padding: 12px 20px;
+    padding: 10px 25px;
     align-items: center;
     gap: 10px;
     border-radius: 5px;
-    border: 1.5px solid var(--c-3, #434343);
+    border: 2px solid var(--c-3, #434343);
     background-color: white;
+    margin-left: 15px;
+    cursor: pointer;
 }
 #description-block{
-    background-color: white;
+    background: var(--Couleur-5, linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #FFF);
     width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 600px;
 }
 #description{
     margin: 60px 100px 150px 150px;
 }
-#description1{
-    margin: 112px 150px 107px 150px;
-}
+
 .apropos{
     background: linear-gradient(84deg, #07466A 99.99%, #51ACE0 100%);
-    height: 400px;
+    
     flex-shrink: 0;
     align-self: stretch;
     text-align: justify;
     width: 100%;
+    align-items: center;
+    padding: 90px 150px;
 }
 #textapropos h6{
     color: white;
@@ -131,12 +143,11 @@
     align-items: center;
     gap: 20px;
     align-self: stretch;
-    margin-top: 20px;
 }
 #textapropos hr{
     width: 100px;
     height: 1px;
-    margin-top: 26px;
+    margin-top: 6px;
     background-color: white;
 }
 #textapropos h3{
@@ -146,7 +157,7 @@
     font-family: Rammetto One;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
 }
 #textapropos p{
@@ -166,8 +177,9 @@
     font-family: Rammetto One;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 22px; /* 157.143% */
+    text-align: justify;
 }
 #vente p{
     color: var(--c-1, #FFF);
@@ -178,6 +190,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 128.571% */
+    text-align: justify;
 }
 #location h5{
     color: var(--c-1, #FFF);
@@ -186,8 +199,9 @@
     font-family: Rammetto One;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 22px; /* 157.143% */
+    text-align: justify;
 }
 #location p{
     color: var(--c-1, #FFF);
@@ -198,6 +212,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 128.571% */
+    text-align: justify;
 }
 #syndic h5{
     color: var(--c-1, #FFF);
@@ -206,8 +221,9 @@
     font-family: Rammetto One;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 22px; /* 157.143% */
+    text-align: justify;
 }
 #syndic p{
     color: var(--c-1, #FFF);
@@ -218,6 +234,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 128.571% */
+    text-align: justify;
 }
 #accompagnement h5{
     color: var(--c-1, #FFF);
@@ -226,8 +243,9 @@
     font-family: Rammetto One;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 22px; /* 157.143% */
+    text-align: justify;
 }
 #accompagnement p{
     color: var(--c-1, #FFF);
@@ -238,6 +256,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 157.143% */
+    text-align: justify;
 }
 #formation h5{
     color: var(--c-1, #FFF);
@@ -246,8 +265,9 @@
     font-family: Rammetto One;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 22px; /* 157.143% */
+    text-align: justify;
 }
 #formation p{
     color: var(--c-1, #FFF);
@@ -258,14 +278,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 157.143% */
+    text-align: justify;
 }
 #projets-perso{
-    padding: 150px;
+    padding: 100px 150px 0px 150px;
     width: 100%;
+    
 }
 #immobilier img{
     width: 537.75px;
     height: 565.547px;
+    padding-bottom: 0px;
     padding-top: 80px;
     margin-bottom: 0%;
     flex-shrink: 0;
@@ -278,15 +301,16 @@
     font-family: Rammetto One;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
     background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 60px;
 }
 #experiments p{
-    align-self: stretch;
+    /*align-self: stretch;*/
     color: var(--c-3, #434343);
     /* Normal */
     font-family: Ubuntu;
@@ -295,6 +319,9 @@
     font-weight: 400;
     line-height: 18px; /* 128.571% */
 }
+#chiffres{
+    margin-left: 0.5px;
+}
 #chiffres h5{
     color: var(--c-8, #FFAC0A);
 
@@ -302,8 +329,9 @@
     font-family: Rammetto One;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
+    
 }
 #chiffres p{
     color: var(--c-3, #434343);
@@ -315,9 +343,26 @@
     font-weight: 400;
     line-height: 18px; /* 128.571% */
 }
+#button1{
+    display: flex;
+    padding: 10px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--c-3, #434343);
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 0%;
+}
+#experiments-projects-chiffres{
+    height: 200px;
+}
 .produits{
     width: 100%;
-    padding: 150px;
+    padding:0px 150px;
+    margin-top: 0px;
+    background: var(--Couleur-5, linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #FFF);
 }
 #produits h6{
     color: #434343;
@@ -332,11 +377,12 @@
     display: flex;
     gap: 20px;
     align-self: stretch;
+    margin-top: 70px;
 }
 #produits hr{
+    margin-top: 76px;
     width: 100px;
     height: 1px;
-    margin-top: 6px;
     background: #434343;
 }
 #textproduits h3{
@@ -344,7 +390,7 @@
     font-family: Rammetto One;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
     background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
     background-clip: text;
@@ -362,19 +408,19 @@
     font-weight: 400;
     line-height: 18px; /* 128.571% */
 }
-#voir-offres{
+#voir_offres{
     display: flex;
-    padding: 12px 20px;
-    align-items: center;
+    padding: 5px 25px;
     gap: 10px;
     border-radius: 5px;
     border-color: 1.5px solid var(--C7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
-    /*background-color: white;*/
-    margin-right: 0%;
+    background-color: white;
+    box-shadow: none;
 }
 footer{
     background: var(--c-3, #434343);
     flex-wrap: nowrap;
+    
 }
 p{
     align-self: stretch;
@@ -502,22 +548,26 @@ line-height: 18px; /* 128.571% */
 .histoire{
     padding: 50px 150px;
     width: 100%;
+    background: var(--Couleur-5, linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #FFF);
 }
 .histoire h2{
     margin: 70px 287px 0px 0px;
     align-self: stretch;
-    color: black;
-    text-align: justify;
+    color: white;
+    background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
+    background-clip: text;
+    text-align: center;
         /* T1*/
     font-family: Rammetto One;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
+    width: 100%;
 }
 .histoire p{
     margin-top: 20px;
-    color: var(--c-1, black);
+    color: black;
     text-align: justify;
         /* Normal*/
     font-family: Ubuntu;
@@ -529,22 +579,26 @@ line-height: 18px; /* 128.571% */
 .vision{
     padding: 50px 150px;
     width: 100%;
+    background: var(--Couleur-5, linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #FFF);
 }
 .vision h2{
     margin: 70px 287px 0px 0px;
     align-self: stretch;
-    color: black;
-    text-align: justify;
+    background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
+    background-clip: text;
+    color: white;
+    text-align: center;
         /* T1*/
     font-family: Rammetto One;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
+    width: 100%;
 }
 .vision p{
     margin-top: 20px;
-    color: var(--c-1, black);
+    color: black;
     text-align: justify;
         /* Normal*/
     font-family: Ubuntu;
@@ -556,22 +610,26 @@ line-height: 18px; /* 128.571% */
 .auteurs{
     padding: 50px 150px;
     width: 100%;
+    background: var(--Couleur-5, linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #FFF);
 }
 .auteurs h2{
     margin: 70px 287px 0px 0px;
     align-self: stretch;
-    color: black;
-    text-align: justify;
+    background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
+    background-clip: text;
+    color: white;
+    text-align: center;
         /* T1*/
     font-family: Rammetto One;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
+    width: 100%;
 }
 .auteurs p{
     margin-top: 20px;
-    color: var(--c-1, black);
+    color: black;
     text-align: justify;
         /* Normal*/
     font-family: Ubuntu;
@@ -579,4 +637,54 @@ line-height: 18px; /* 128.571% */
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 128.571%*/
+}
+.produits1{
+    width: 100%;
+    padding:0px 150px;
+    margin-top: 0px;
+    background: white;
+}
+#produits1 h6{
+    color: #434343;
+    /*leading-trim: both;
+    text-edge: cap;*/
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 145.455% */
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+    align-self: stretch;
+    margin-top: 70px;
+}
+#produits1 hr{
+    margin-top: 76px;
+    width: 100px;
+    height: 1px;
+    background: #434343;
+}
+#textproduits1 h3{
+    /* T1 */
+    font-family: Rammetto One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    background: var(--c-7, linear-gradient(84deg, #07466A 30.21%, #51ACE0 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#textproduits1 p{
+    color: var(--black, #231F20);
+    text-align: justify;
+
+    /* Normal */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
 }
